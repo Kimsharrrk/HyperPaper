@@ -1,0 +1,138 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nanum+Pen+Script&display=swap');
+
+@layer base {
+  :root {
+    --font-serif: "Lora", "Merriweather", Georgia, Cambria, serif;
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", Menlo, monospace;
+  }
+
+  body {
+    background-color: #fcfbf9;
+    color: #1a1a1e;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar for paper feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dcd9d2;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b5b1a8;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', 'Nanum Pen Script', cursive;
+}
+
+/* ─── Reading Modes ─── */
+.mode-dark {
+  background-color: #1a1a1e !important;
+  color: #e0ddd8 !important;
+}
+
+.mode-dark body,
+.mode-dark #__next,
+.mode-dark main {
+  background-color: #1a1a1e;
+  color: #e0ddd8;
+}
+
+.mode-dark .bg-\[\#fcfbf9\],
+.mode-dark .bg-white,
+.mode-dark .bg-\[\#fcfbf9\]\/95,
+.mode-dark .bg-\[\#fcfbf9\]\/80 {
+  background-color: #252529 !important;
+}
+
+.mode-dark header {
+  background-color: #1f1f23 !important;
+  border-color: #333338 !important;
+}
+
+.mode-dark .bg-neutral-50,
+.mode-dark .bg-neutral-100,
+.mode-dark .bg-neutral-100\/90 {
+  background-color: #2d2d32 !important;
+}
+
+.mode-dark p,
+.mode-dark h1,
+.mode-dark h2,
+.mode-dark h3 {
+  color: #d4d1cb;
+}
+
+.mode-dark .text-neutral-900,
+.mode-dark .text-neutral-800,
+.mode-dark .text-neutral-700 {
+  color: #c8c5bf !important;
+}
+
+.mode-dark .text-neutral-600,
+.mode-dark .text-neutral-500 {
+  color: #8a8680 !important;
+}
+
+.mode-dark .border-neutral-200,
+.mode-dark .border-neutral-100 {
+  border-color: #333338 !important;
+}
+
+/* Sepia mode */
+.mode-sepia {
+  background-color: #f5ede0 !important;
+}
+
+.mode-sepia body,
+.mode-sepia .bg-\[\#fcfbf9\],
+.mode-sepia .bg-white {
+  background-color: #f5ede0 !important;
+}
+
+.mode-sepia .bg-\[\#fcfbf9\]\/95 {
+  background-color: #f5ede0f2 !important;
+}
+
+.mode-sepia header {
+  background-color: #ede3d2f5 !important;
+  border-color: #d4c5ae !important;
+}
+
+.mode-sepia p,
+.mode-sepia h1,
+.mode-sepia h2,
+.mode-sepia h3 {
+  color: #3d2f20;
+}
+
+.mode-sepia .text-neutral-800,
+.mode-sepia .text-neutral-900 {
+  color: #4a3525 !important;
+}
+
+.mode-sepia .text-neutral-600,
+.mode-sepia .text-neutral-500 {
+  color: #7a6040 !important;
+}
+
+.mode-sepia .border-neutral-200,
+.mode-sepia .border-neutral-100 {
+  border-color: #d4c5ae !important;
+}

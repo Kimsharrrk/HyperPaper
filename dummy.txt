@@ -1,0 +1,5 @@
+This paper introduces the Flux Capacitor. 
+A flux capacitor is a plutonium-powered device that makes time travel possible. 
+It requires 1.21 gigawatts of electrical power to operate, which can be supplied by a lightning strike or a portable nuclear reactor.
+The mechanism contrasts heavily with standard temporal displacement engines which rely on tachyons. 
+By pairing a flux capacitor with a DeLorean traveling at 88 miles per hour, temporal displacement occurs instantly.
